@@ -21,7 +21,8 @@ function handleGetData(event) {
     }).then(
       (data) => {
         weatherData = data;
-        render()
+        render();
+        $("form").trigger("reset")
       },
       
       (error) => {
